@@ -6,6 +6,16 @@ server:
 spring:
   application:
     name: MA-ITEM-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.168.105:3306/ma?useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&rewriteBatchedStatements=true
+    username: root
+    password: system
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
 
 eureka:
   client:
